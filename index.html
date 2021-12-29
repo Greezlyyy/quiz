@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz | Yuri</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+</head>
+<body>
+    <div class="start_btn"><button>Inizia il quiz</button></div>
+
+    <!-- Info Box -->
+    <div class="info_box">
+        <div class="info-title"><span>Alcune regole di questo quiz</span></div>
+        <div class="info-list">
+            <div class="info">1. Avrai solo <span>15 secondi</span> per ogni domanda.</div>
+            <div class="info">2. Una volta selezionata la risposta, non può essere annullata.</div>
+            <div class="info">3. Non puoi selezionare alcuna opzione allo scadere del tempo.</div>
+            <div class="info">4. Non puoi uscire dal quiz mentre stai giocando.</div>
+            <div class="info">5. Otterrai punti in base alle tue risposte corrette.</div>
+        </div>
+        <div class="buttons">
+            <button class="quit">Esci dal quiz</button>
+            <button class="restart">Continua</button>
+        </div>
+    </div>
+
+    <!-- Quiz Box -->
+    <div class="quiz_box">
+        <header>
+            <div class="title">Fantastico sito per quiz</div>
+            <div class="timer">
+                <div class="time_left_txt">Tempo rimasto</div>
+                <div class="timer_sec">15</div>
+            </div>
+            <div class="time_line"></div>
+        </header>
+        <section>
+            <div class="que_text">
+                <!-- Here I've inserted question from JavaScript -->
+            </div>
+            <div class="option_list">
+                <!-- Here I've inserted options from JavaScript -->
+            </div>
+        </section>
+
+        <!-- footer of Quiz Box -->
+        <footer>
+            <div class="total_que">
+                <!-- Here I've inserted Question Count Number from JavaScript -->
+            </div>
+            <button class="next_btn">Prossima domanda</button>
+        </footer>
+    </div>
+
+    <!-- Result Box -->
+    <div class="result_box">
+        <div class="icon">
+            <i class="fas fa-crown"></i>
+        </div>
+        <div class="complete_text">Hai completato il quiz!</div>
+        <div class="score_text">
+            <!-- Here I've inserted Score Result from JavaScript -->
+        </div>
+        <div class="buttons">
+            <button class="restart">Ripeti il ​​quiz</button>
+            <button class="quit">Esci dal quiz</button>
+        </div>
+    </div>
+
+    <!-- Inside this JavaScript file I've inserted Questions and Options only -->
+    <script src="js/questions.js"></script>
+
+    <!-- Inside this JavaScript file I've coded all Quiz Codes -->
+    <script src="js/script.js"></script>
+
+</body>
+</html>
